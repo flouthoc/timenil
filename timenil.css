@@ -1,0 +1,236 @@
+/*--- flouthoc ----*/
+/*-- http://github.com/flouthoc --*/
+/*-- flouthoc@gmail.com --*/
+
+div.timenil-vertical-line {
+    position: absolute;
+    width: 1px;
+    
+    background-color: #e6e6e6;
+    
+    height: 100%;
+    
+    left: 50%;
+    
+    transform: translate(-50%);
+    * z-index: 1;
+    display: table-cell;
+}
+div.timenil-node {
+    
+    z-index: 0;
+    margin-top: 5%;
+}
+div.timenil-node:before,
+
+div.timenil-node:after {
+    content: '';
+    display: table;
+}
+div.timenil-node:after {
+    clear: both;
+}
+div.timenil-node {
+    display: inline-block;
+}
+
+
+div.timenil-node {
+    display: block;
+}
+
+
+div.timenil-node-child-left {
+    position: relative;
+    width: 43%;
+    margin-left: 1%;
+    float: left;
+    text-align: right;
+    z-index: 1;
+}
+
+div.timenil-node-child-right {
+    position: relative;
+    text-align: left;
+    float: right;
+    text-align: left;
+    margin-right: 1%;
+    width: 43%;
+ 
+}
+
+
+@media(min-width:500px) {
+    div.timenil-node-center {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    div.timenil-node-separator{
+    	padding: 5px;
+    	width:100px;
+    	height:30px;
+    	line-height: 30px;
+    	font-size:20px;
+    }
+}
+@media(max-width:499px) {
+    div.timenil-node-center {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+    div.timenil-node-separator{
+    	padding: 5px;
+    	width:70px;
+    	height:20px;
+    	font-size:15px;
+    }
+}
+div.timenil-node-center{
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    margin-top: 40px;
+}
+div.timenil-node-separator {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    left: 50%;
+    margin-top:5px;
+    color: white;
+    text-align: center;
+    border-radius:3px;
+    z-index: 0;
+    transform: translate(-50%);
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+div.timenil-node-trace {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    width: 10%;
+    height: 1px;
+    text-align: center;
+    
+    /*padding: 1em;
+    text-align: left;
+    line-height: 1.5em;*/
+    
+    z-index: 0;
+    transform: translate(-50%);
+    border-bottom: 2px dotted #7f8c8d;
+    margin-top: 50px;
+}
+
+.timenil-content-box {
+    /*margin:0;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;*/
+	  
+    padding: 5%;
+    line-height: 1.5em;
+    color: #7f8c8d;
+}
+.timenil-content-text {
+    line-height: 1.5em;
+}
+
+
+
+/*---------------ALL THE CLASSES RELATED TO THEME-------------------------------------------
+--------------You can edit these to get your own custome theme----------------------------*/
+
+div.timenil-node-child-right-theme {
+    background: radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -moz-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -webkit-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -o-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    box-shadow: 1px 3px 3px -2px #242424;
+    -webkit-box-shadow: 1px 3px 3px -2px #242424;
+    -moz-box-shadow: 1px 3px 3px -2px #242424;
+    -o-box-shadow: 1px 3px 3px -2px #242424;
+    border-radius: 1%;
+    border: 1px solid #b2b2b2;
+}
+
+div.timenil-node-child-left-theme {
+    background: radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -moz-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -webkit-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    background: -o-radial-gradient(center, ellipse cover, #FAFAFA 35%, #F7F7F7 60%);
+    box-shadow: 1px 3px 3px -2px #242424;
+    -webkit-box-shadow: 1px 3px 3px -2px #242424;
+    -moz-box-shadow: 1px 3px 3px -2px #242424;
+    -o-box-shadow: 1px 3px 3px -2px #242424;
+    border-radius: 1%;
+    text-align: left;
+    border: 1px solid #b2b2b2;
+}
+
+/*@media(min-width:500px) {
+    div.timenil-node-child-left:after, div.timenil-node-child-left:before {
+        left: 100%;
+        top: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    div.timenil-node-child-left:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #F7F7F7;
+        border-width: 20px;
+    }
+    div.timenil-node-child-left:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-left-color: #b2b2b2;
+        border-width: 21px;
+        margin-top: -1px;
+    }
+}
+@media(min-width:500px) {
+    div.timenil-node-child-right:after, div.timenil-node-child-right:before {
+        right: 100%;
+        top: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    div.timenil-node-child-right:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-right-color: #F7F7F7;
+        border-width: 20px;
+    }
+    div.timenil-node-child-right:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-right-color: #b2b2b2;
+        border-width: 21px;
+        margin-top: -1px;
+    }
+}*/
+		
+		
+

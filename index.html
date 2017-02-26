@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<header>
+ 		<meta name="viewport" content="width=device-width">
+    			<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>timenil</title>
+		<link rel="stylesheet" href="timenil.css">
+		<style>
+			body{
+			font-family: 'Raleway', sans-serif;
+			}
+
+			div#timenil{
+				position:relative;
+				height:100%;
+				width:100%;
+				display:table;
+				/*display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: coloumn;
+				flex-direction: coloumn;
+				overflow:hidden;*/
+			}
+
+
+			@keyframes fadeIn {
+  				0% {
+    					opacity: 0.5	;
+  				}
+				100% {
+    					visibility: visible;
+    					opacity: 1;
+  				}
+			}
+
+
+		</style>
+		<script type="text/javascript">
+			window.onload = init;
+			function init(){
+				var x = document.getElementById("timenil");
+				var y = x.getElementsByClassName("timenil-node");
+				var i;
+				for(i=0; i < y.length; i++){
+					y[i].style="animation: 2s fadeIn;animation-fill-mode: forwards;visibility: hidden; animation-delay:"+((i/2))+"s;";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1 style="color:#2c3e50;">timenil</h1>
+			<span style="color:#2c3e50; display:block;">Pure CSS responsive timeline mockup. MIT License.</span><br>
+			        <iframe src="http://ghbtns.com/github-btn.html?user=flouthoc&type=follow" height="30" width="100" frameborder="0" scrolling="0" style="width:168px; height: 30px;" allowTransparency="true"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=flouthoc&repo=timenil&type=watch" height="30" width="70" frameborder="0" scrolling="0" style="width:70px; height: 30px;" allowTransparency="true"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=flouthoc&repo=timenil&type=fork" height="30" width="70" frameborder="0" scrolling="0" style="width:70px; height: 30px;" allowTransparency="true"></iframe>
+		</center>
+		<div id="timenil">
+			<div class="timenil-vertical-line"></div>
+
+
+			<div class="timenil-node">
+				<div class="timenil-node-child-left timenil-node-child-left-theme">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p>Garnishing with a bit of JS for fade-in animation , you can ignore JS part if you dont want that.
+  						</div>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p><h1>Right</h1></p>
+    							<p>Some text about heading</p>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<div class="timenil-node">
+				<div class="timenil-node-child-left">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+  						
+  						<p><h1>Left</h1></p>
+    						<p>Some text about heading</p>
+    							
+  						</div>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right timenil-node-child-right-theme">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+    					<button style="background-color:#2ecc71; color:white; border:1px solid #2ecc71;">Submit</button>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="timenil-node">
+				<div class="timenil-node-separator">
+					2017
+				</div>
+			</div>
+
+			<div class="timenil-node">
+				<div class="timenil-node-child-left timenil-node-child-left-theme">
+					<div class="timenil-content-box">
+    							<img src="assets/img2.jpg" style="width:100%; height:100%;"/>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p><h1>Right</h1></p>
+    							<p>Some text about heading</p>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="timenil-node">
+				<div class="timenil-node-child-left">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+  						
+  						<p><h1>Left</h1></p>
+    						<p>Some text about heading</p>
+    							
+  						</div>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right timenil-node-child-right-theme">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+    							<button>Submit</button>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+
+
+		</div>
+	</body>
+</html>

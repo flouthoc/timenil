@@ -1,0 +1,135 @@
+<html>
+	<head>
+	<header>
+ 		<meta name="viewport" content="width=device-width">
+    			<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>timenil</title>
+		<link rel="stylesheet" href="timenil.css">
+		<style>
+			body{
+			font-family: 'Raleway', sans-serif;
+			}
+
+			div#timenil{
+				position:relative;
+				height:100%;
+				width:100%;
+				display:table;
+				/*display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: coloumn;
+				flex-direction: coloumn;
+				overflow:hidden;*/
+			}
+
+
+			@keyframes fadeIn {
+  				0% {
+    					opacity: 0.5	;
+  				}
+				100% {
+    					visibility: visible;
+    					opacity: 1;
+  				}
+			}
+
+
+		</style>
+		<script type="text/javascript">
+			window.onload = init;
+			function init(){
+				var x = document.getElementById("timenil");
+				var y = x.getElementsByClassName("timenil-node");
+				var i;
+				for(i=0; i < y.length; i++){
+					y[i].style="animation: 2s fadeIn;animation-fill-mode: forwards;visibility: hidden; animation-delay:"+((i/2))+"s;";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center><h1>timenil</h1></center>
+		<div id="timenil">
+			<div class="timenil-vertical-line"></div>
+
+
+			<div class="timenil-node">
+				<div class="timenil-node-child-left timenil-node-child-left-theme">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+  						</div>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p><h1>Right</h1></p>
+    							<p>Some text about heading</p>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<div class="timenil-node">
+				<div class="timenil-node-child-left">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+  						
+  						<p><h1>Left</h1></p>
+    						<p>Some text about heading</p>
+    							
+  						</div>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right timenil-node-child-right-theme">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="timenil-node">
+				<div class="timenil-node-separator">
+					2012
+				</div>
+			</div>
+
+			<div class="timenil-node">
+				<div class="timenil-node-child-left timenil-node-child-left-theme">
+					<div class="timenil-content-box">
+    							<img src="assets/img2.jpg" style="width:100%; height:100%;"/>
+					</div>
+				</div>
+
+				<div class="timenil-node-center"></div>
+				<div class="timenil-node-trace"></div>
+				
+				<div class="timenil-node-child-right">
+					<div class="timenil-content-box">
+  						<div class="timenil-content-text">
+    							<p><h1>Right</h1></p>
+    							<p>Some text about heading</p>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
+		</div>
+	</body>
+</html>
