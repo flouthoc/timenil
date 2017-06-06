@@ -5,6 +5,7 @@
 ![img](https://raw.githubusercontent.com/flouthoc/timenil/master/assets/mobile.png)
 
 
-###Usage
+##Usage
+
 Implementing timenil in your own project is as easy as it looks. timenil.css has css-classes defined for every node type
 Refer to example.html and timenil.css for details
